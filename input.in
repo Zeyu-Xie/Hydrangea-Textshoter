@@ -1,2 +1,3 @@
-你好呀
-123456
+The anchor parameter determines the alignment of drawn text relative to the xy parameter. The default alignment is top left, specifically la (left-ascender) for horizontal text and lt (left-top) for vertical text.
+
+This parameter is only supported by OpenType/TrueType fonts. Other fonts may ignore the parameter and use the default (top left) alignment.
