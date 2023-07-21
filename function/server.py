@@ -5,7 +5,6 @@ from textshoter import textshoter
 
 warnings.filterwarnings("ignore")
 
-HOST = "127.0.0.1"
 PORT = 15371
 
 app = Flask(__name__)
