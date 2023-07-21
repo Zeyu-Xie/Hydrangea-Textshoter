@@ -25,7 +25,7 @@ def textshoter_api():
 
 @app.route("/textshoter")
 def page():
-    return send_file("./page/build/index.html")
+    return send_file("../page/build/index.html")
 
 if __name__ == "__main__":
     app.run(port=PORT)
