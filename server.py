@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, render_template
 import warnings
 
 from textshoter import textshoter
@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 
 @app.route("/textshoter/api")
-def textshoter():
+def textshoter_api():
     marginX = request.args.get("marginX")
     marginY = request.args.get("marginY")
     fontSize = request.args.get("fontSize")
@@ -23,9 +23,9 @@ def textshoter():
         fontSize), int(lineSpace), int(width), color)
     return {"ok": "1"}
 
-@app.route("textshoter")
+@app.route("/textshoter")
 def page():
-    return send_file("./webpage/")
+    return send_file("./page/build/index.html")
 
 if __name__ == "__main__":
     app.run(port=PORT)
