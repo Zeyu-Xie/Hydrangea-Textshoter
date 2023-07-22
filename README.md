@@ -39,4 +39,5 @@ In case of making contributions to this project, you can select suitable command
    2. Other static files: ```cp -r ./page/build/* ./function/static```
 
 ⚠️ Whatever changes you've made, don't forget to add a ```static``` in front of **every address** in ```./page/templates/index.html```. Or you may not be able to successfully read files from the **static folder**.
+
 ⚠️ And remember to move the ```media``` folder out.
