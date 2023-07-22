@@ -8,14 +8,14 @@ from line import line
 warnings.filterwarnings("ignore")
 
 
-def textshoter(margin_x, margin_y, font_size, line_space, width, color):
+def textshoter(margin_x, margin_y, font_size, line_space, width, color, str):
 
     line_height = font_size
     font = ImageFont.truetype("Sarasa.ttf", font_size)
 
-    str = ""
-    with open("input.in", "r") as file:
-        str = file.read()
+    # str = ""
+    # with open("input.in", "r") as file:
+    #     str = file.read()
 
     im = Image.new("RGB", (1, 1), "white")
     d = ImageDraw.Draw(im)

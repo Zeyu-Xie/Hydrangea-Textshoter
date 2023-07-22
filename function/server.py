@@ -14,7 +14,8 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins='*')
 CORS(app, origins="*")
 
-@app.route("/textshoter/api")
+
+@app.route("/textshoter/api", methods=["POST"])
 def textshoter_api():
     marginX = request.args.get("marginX")
     marginY = request.args.get("marginY")
@@ -23,8 +24,12 @@ def textshoter_api():
     width = request.args.get("width")
     color = request.args.get("color")
 
+    str_=request.json["q"]
+
+    print(str_)
+
     textshoter(int(marginX), int(marginY), int(
-        fontSize), int(lineSpace), int(width), color)
+        fontSize), int(lineSpace), int(width), color,str_)
     return {"ok": "1"}
 
 

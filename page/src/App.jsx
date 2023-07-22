@@ -48,7 +48,9 @@ class App extends React.Component {
     }
 
     submit = () => {
-        axios.get(`http://127.0.0.1:15371/textshoter/api?marginX=${this.marginX.current.value}&marginY=${this.marginY.current.value}&fontSize=${this.fontSize.current.value}&lineSpace=${this.lineSpace.current.value}&width=${this.width.current.value}&color=${this.color.current.value}`).then(res => {
+        axios.post(`http://127.0.0.1:15371/textshoter/api?marginX=${this.marginX.current.value}&marginY=${this.marginY.current.value}&fontSize=${this.fontSize.current.value}&lineSpace=${this.lineSpace.current.value}&width=${this.width.current.value}&color=${this.color.current.value}`,{
+            "q": "The Declaration of Independence, headed The unanimous Declaration of the thirteen united States of America, is the founding document of the United States. It was adopted on July 4, 1776 by the Second Continental Congress meeting at the Pennsylvania State House in Philadelphia, later renamed Independence Hall."
+        }).then(res => {
             console.log(res)
         }).catch(err => {
             console.log("ERROR", err)
