@@ -24,12 +24,12 @@ def textshoter_api():
     width = request.args.get("width")
     color = request.args.get("color")
 
-    str_=request.json["q"]
+    str_ = request.json["q"]
 
     print(str_)
 
     textshoter(int(marginX), int(marginY), int(
-        fontSize), int(lineSpace), int(width), color,str_)
+        fontSize), int(lineSpace), int(width), color, str_)
     return {"ok": "1"}
 
 
