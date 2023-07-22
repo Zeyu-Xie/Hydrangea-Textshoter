@@ -22,9 +22,11 @@ def textshoter_api():
         fontSize), int(lineSpace), int(width), color)
     return {"ok": "1"}
 
+
 @app.route("/textshoter")
 def page():
-    return send_file("../page/build/index.html")
+    return render_template("index.html")
+
 
 if __name__ == "__main__":
     app.run(port=PORT)
