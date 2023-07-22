@@ -15,8 +15,8 @@ socketio = SocketIO(app, cors_allowed_origins='*')
 CORS(app, origins="*")
 
 
-@app.route("/textshoter/api", methods=["POST"])
-def textshoter_api():
+@app.route("/textshoter/api/submitText", methods=["POST"])
+def submitText():
     marginX = request.args.get("marginX")
     marginY = request.args.get("marginY")
     fontSize = request.args.get("fontSize")
@@ -32,6 +32,11 @@ def textshoter_api():
         fontSize), int(lineSpace), int(width), color, str_)
     return {"ok": "1"}
 
+@app.route("/textshoter/api/downloadImage")
+def downloadImage():
+    res=send_file("static/textshoter.jpeg")
+    res.headers["Content-Disposition"]="attachment; filename=textshoter.jpeg"
+    return res
 
 @app.route("/textshoter")
 def page():

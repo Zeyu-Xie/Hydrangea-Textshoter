@@ -57,7 +57,7 @@ def textshoter(margin_x, margin_y, font_size, line_space, width, color, str):
             t_x += font_size*0.5
         t_y += line_height+line_space
 
-    im_.save("textshoter.jpeg")
+    im_.save("./static/textshoter.jpeg")
 
 
 if __name__ == "__main__":

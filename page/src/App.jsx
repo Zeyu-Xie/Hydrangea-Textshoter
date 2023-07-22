@@ -55,12 +55,14 @@ class App extends React.Component {
                     <button className="btn btn-outline-secondary" type="button" id="button-addon2" onClick={this.submit} >Button</button>
                 </div>
 
+                <a href="http://127.0.0.1:15371/textshoter/api/downloadImage">Download</a>
+
             </div>
         );
     }
 
     submit = () => {
-        axios.post(`http://127.0.0.1:15371/textshoter/api?marginX=${this.marginX.current.value}&marginY=${this.marginY.current.value}&fontSize=${this.fontSize.current.value}&lineSpace=${this.lineSpace.current.value}&width=${this.width.current.value}&color=${this.color.current.value}`, {
+        axios.post(`http://127.0.0.1:15371/textshoter/api/submitText?marginX=${this.marginX.current.value}&marginY=${this.marginY.current.value}&fontSize=${this.fontSize.current.value}&lineSpace=${this.lineSpace.current.value}&width=${this.width.current.value}&color=${this.color.current.value}`, {
             "q": this.text.current.value
         }).then(res => {
             console.log(res)
