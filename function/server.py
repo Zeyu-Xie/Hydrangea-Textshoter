@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 
 PORT = 15371
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")
 
 socketio = SocketIO(app, cors_allowed_origins='*')
 CORS(app, origins="*")
@@ -33,7 +33,7 @@ def submitText():
 
 @app.route("/textshoter/api/downloadImage")
 def downloadImage():
-    res = send_file("static/textshoter.jpeg")
+    res = send_file("app/textshoter.jpeg")
     res.headers["Content-Disposition"] = "attachment; filename=textshoter.jpeg"
     return res
 
