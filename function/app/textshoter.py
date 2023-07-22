@@ -1,9 +1,8 @@
 from PIL import Image, ImageDraw, ImageFont
 import warnings
-import json
 
-from word import word
-from line import line
+from .word import word
+from .line import line
 
 warnings.filterwarnings("ignore")
 
@@ -11,11 +10,7 @@ warnings.filterwarnings("ignore")
 def textshoter(margin_x, margin_y, font_size, line_space, width, color, str):
 
     line_height = font_size
-    font = ImageFont.truetype("Sarasa.ttf", font_size)
-
-    # str = ""
-    # with open("input.in", "r") as file:
-    #     str = file.read()
+    font = ImageFont.truetype("app/Sarasa.ttf", font_size)
 
     im = Image.new("RGB", (1, 1), "white")
     d = ImageDraw.Draw(im)

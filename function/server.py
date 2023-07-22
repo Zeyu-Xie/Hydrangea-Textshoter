@@ -3,7 +3,7 @@ import warnings
 from flask_socketio import SocketIO
 from flask_cors import CORS
 
-from textshoter import textshoter
+from app.textshoter import textshoter
 
 warnings.filterwarnings("ignore")
 
@@ -26,17 +26,17 @@ def submitText():
 
     str_ = request.json["q"]
 
-    print(str_)
-
     textshoter(int(marginX), int(marginY), int(
         fontSize), int(lineSpace), int(width), color, str_)
     return {"ok": "1"}
 
+
 @app.route("/textshoter/api/downloadImage")
 def downloadImage():
-    res=send_file("static/textshoter.jpeg")
-    res.headers["Content-Disposition"]="attachment; filename=textshoter.jpeg"
+    res = send_file("static/textshoter.jpeg")
+    res.headers["Content-Disposition"] = "attachment; filename=textshoter.jpeg"
     return res
+
 
 @app.route("/textshoter")
 def page():
