@@ -2,6 +2,43 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+#heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#signing {
+    font-family: fantasy;
+}
+
+#hydrangea {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 1px;
+
+    margin: auto;
+}
+
+#left-content {
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#sub-left-content {
+    flex-wrap: wrap;
+    height: min-content;
+    margin: auto;
+}
+
+#right-content {
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#sub-right-content {
+    margin: auto;
+    flex-wrap: wrap;
+}
+
 .input-group {
     max-width: 600px;
 }
