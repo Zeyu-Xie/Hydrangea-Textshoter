@@ -9,10 +9,6 @@ warnings.filterwarnings("ignore")
 
 
 def textshoter(margin_x, margin_y, font_size, line_space, width, color):
-    config = {}
-    with open("config.json", "r") as config_file:
-        config = config_file.read()
-    config = json.loads(config)
 
     line_height = font_size
     font = ImageFont.truetype("Sarasa.ttf", font_size)

@@ -1,4 +1,5 @@
 import React from "react"
+import axios from "axios"
 
 class App extends React.Component {
 
@@ -47,7 +48,11 @@ class App extends React.Component {
     }
 
     submit = () => {
-        console.log("777888")
+        axios.get(`http://127.0.0.1:15371/textshoter/api?marginX=${this.marginX.current.value}&marginY=${this.marginY.current.value}&fontSize=${this.fontSize.current.value}&lineSpace=${this.lineSpace.current.value}&width=${this.width.current.value}&color=${this.color.current.value}`).then(res => {
+            console.log(res)
+        }).catch(err => {
+            console.log("ERROR", err)
+        })
     }
 
 }
