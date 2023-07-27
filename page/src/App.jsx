@@ -26,8 +26,8 @@ class App extends React.Component {
 
                     <div id="left-content" className="d-flex col-md-4 col-12">
                         <div id="sub-left-content" className="d-flex">
-                            <img id="hydrangea" src={hydrangea} alt="" className="col-8 col-md-12 mb-5" />
-                            <h2 id="heading" className="col-12 text-center mb-4">Hydrangea Textshoter</h2>
+                            <img id="hydrangea" src={hydrangea} alt="" className="col-6 col-md-12 col-lg-10 col-xl-8 col-xxl-7 mx-auto mb-5 border-secondary-subtle" />
+                            <h3 id="heading" className="col-12 text-center mb-4">Hydrangea Textshoter</h3>
                             <h5 id="signing" className="col-12 text-center mb-3">By Acan</h5>
                             
                         </div>
