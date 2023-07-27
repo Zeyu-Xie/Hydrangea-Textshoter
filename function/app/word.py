@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw
 
+
 class word:
 
     str = ""
@@ -16,7 +17,7 @@ class word:
         self.len = len(self.str)
         self.wit = 0
         for i in range(0, len(self.str)):
-            x, y = d.textsize(chr(ord(self.str[i])), font=font_)
+            x = d.textlength(chr(ord(self.str[i])), font=font_)
             self.wit += x
         self.end = self.start+self.wit
 

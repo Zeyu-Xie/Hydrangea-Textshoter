@@ -52,7 +52,7 @@ def textshoter(margin_x, margin_y, font_size, line_space, width, color, str):
             for k in range(0, len(line_list[i].text[j])):
                 d_.text((t_x, t_y), line_list[i].text[j]
                         [k], fill=color, anchor="la", font=font)
-                x, y = d.textsize(chr(ord(line_list[i].text[j][k])), font=font)
+                x = d.textlength(chr(ord(line_list[i].text[j][k])), font=font)
                 t_x += x
             t_x += font_size*0.5
         t_y += line_height+line_space
