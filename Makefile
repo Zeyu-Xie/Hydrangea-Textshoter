@@ -16,7 +16,7 @@ clear_cache:
 	-echo "Removing uploaded photos"
 	-rm ./function/app/sources/*
 	-echo "Removing the output image"
-	-rm ./function/app/output.png
+	-rm ./function/app/output.jpeg
 
 run:
 	-echo "Starting the project"
