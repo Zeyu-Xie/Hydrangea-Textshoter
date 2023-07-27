@@ -2,6 +2,7 @@ import React from "react"
 import axios from "axios"
 import "./App.css"
 import hydrangea from "./hydrangea.png"
+import config from "./config.json"
 
 class App extends React.Component {
 
@@ -28,7 +29,6 @@ class App extends React.Component {
                             <img id="hydrangea" src={hydrangea} alt="" className="col-8 col-md-12 mb-5" />
                             <h2 id="heading" className="col-12 text-center mb-4">Hydrangea Textshoter</h2>
                             <h5 id="signing" className="col-12 text-center mb-3">By Acan</h5>
-                            {/* <h4 className="col-12 text-center">Texts to JPEG</h4> */}
                             
                         </div>
 
@@ -87,7 +87,7 @@ class App extends React.Component {
     }
 
     submit = () => {
-        axios.post(`http://127.0.0.1:15371/textshoter/api/submitText?marginX=${this.marginX.current.value}&marginY=${this.marginY.current.value}&fontSize=${this.fontSize.current.value}&lineSpace=${this.lineSpace.current.value}&width=${this.width.current.value}&color=${this.color.current.value}`, {
+        axios.post(`${config.urls["Hydrangea-Textshoter"]}/textshoter/api/submitText?marginX=${this.marginX.current.value}&marginY=${this.marginY.current.value}&fontSize=${this.fontSize.current.value}&lineSpace=${this.lineSpace.current.value}&width=${this.width.current.value}&color=${this.color.current.value}`, {
             "q": this.text.current.value
         }).then(res => {
             console.log(res)

@@ -8,13 +8,13 @@ warnings.filterwarnings("ignore")
 
 script_path = os.path.abspath(__file__)
 script_directory = os.path.dirname(script_path)
+font_file_path = os.path.join(script_directory, "Sarasa.ttf")
+output_path = os.path.join(script_directory, "output.jpeg")
 
 
 def textshoter(margin_x, margin_y, font_size, line_space, width, color, str):
 
     line_height = font_size
-
-    font_file_path = os.path.join(script_directory, "Sarasa.ttf")
     font = ImageFont.truetype(font_file_path, font_size)
 
     im = Image.new("RGB", (1, 1), "white")
@@ -57,8 +57,7 @@ def textshoter(margin_x, margin_y, font_size, line_space, width, color, str):
             t_x += font_size*0.5
         t_y += line_height+line_space
 
-    image_file_path = os.path.join(script_directory, "textshoter.jpeg")
-    im_.save(image_file_path)
+    im_.save(output_path)
 
 
 if __name__ == "__main__":
