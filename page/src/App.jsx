@@ -68,7 +68,7 @@ class App extends React.Component {
                             <div className="input-group">
                                 <span className="input-group-text">Operate</span>
                                 <input type="text" className="form-control" defaultValue={"Please Click here 👉"} readOnly />
-                                <a className="btn btn-outline-secondary" type="button" href="http://127.0.0.1:15371/textshoter/api/downloadImage">⏬</a>
+                                <a className="btn btn-outline-secondary" type="button" href={`${config.urls["Hydrangea-Textshoter"]}/textshoter/api/downloadImage`}>⏬</a>
 
                                 <button className="btn btn-outline-secondary" type="button" onClick={this.submit}>⏫</button>
                             </div>
