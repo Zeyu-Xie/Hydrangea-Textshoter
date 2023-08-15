@@ -1,43 +1,70 @@
-# Hydrangea-Textshoter
-## Function
+# Getting Started with Create React App
 
-This project aims at transforming text to images. It includes two parts: the front-end and the back-end, separatly built by React Framework and python.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Usage
+## Available Scripts
 
-### To Junior Users
+In the project directory, you can run:
 
-You can simply choose any version of the formal edition. Just ```clone``` the repository to local environments and run:
+### `npm start`
 
-```
-cd Hydrangea-Textshoter/function
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Then you'll be in the ```function``` folder, with the ```server.py``` in it. Use this command to run the server:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-```
-python server.py
-```
+### `npm test`
 
-### To Developers
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-If you only need the basic functions, just act like a normal user: 
+### `npm run build`
 
-```
-cd Hydrangea-Textshoter/function
-python server.py
-```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-In case of making contributions to this project, you can select suitable commands as follows: 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. **Front-End Developing** ```cd page```
-   1. Install the necessary packages ```npm i```
-   2. Test the react framework ```npm start```
-   3. Pack the react framework ```npm run build```
-2. **Copying the Packed Front-End Codes**
-   1. ```index.html```: ```cp ./page/build/index.html ./function/templates```
-   2. Other static files: ```cp -r ./page/build/* ./function/static```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-⚠️ Whatever changes you've made, don't forget to add a ```static``` in front of **every address** in ```./page/templates/index.html```. Or you may not be able to successfully read files from the **static folder**.
+### `npm run eject`
 
-⚠️ And remember to move the ```media``` folder out.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
