@@ -17,10 +17,7 @@ $(document).ready(function () {
         $('a').each(function () {
             $(this).removeClass('active');
         })
-        $(this).addClass('active');
-
-
-        var target = this.hash,
+        $(this).addClass('active');        var target = this.hash,
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
@@ -47,9 +44,6 @@ $(window).scroll(function () {
     }
 });
 
-
-
-
 //SIde BAr MEnu JS
 /**
    * Slide right instantiation and action.
@@ -66,18 +60,12 @@ var slideRightBtn = document.querySelector('#c-button--slide-left');
 slideRightBtn.addEventListener('click', function (e) {
     e.preventDefault;
     slideRight.open();
-});
-
-
-//animation effect(waypoint)
+});//animation effect(waypoint)
 //paste this code under head tag or in a seperate js file.
 // Wait for window load
 $(window).load(function () {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
-
-
-    function onScrollInit(items, trigger) {
+    $(".se-pre-con").fadeOut("slow");;    function onScrollInit(items, trigger) {
         items.each(function () {
             var osElement = $(this),
                 osAnimationClass = osElement.attr('data-os-animation'),
@@ -102,14 +90,8 @@ $(window).load(function () {
 
     onScrollInit($('.os-animation'));
     onScrollInit($('.staggered-animation'), $('.staggered-animation-container')
-
-
-
     );
 });
-
-
-
 //Counter JS
 $(document).ready(function () {
     jQuery(document).ready(function ($) {

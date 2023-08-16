@@ -46,10 +46,7 @@ submit.onclick = () => {
     // result.style.backgroundColor=backgroundColor
     // result.fontSize=fontSize
     // result.lineHeight=lineHeight
-    // result.letterSpacing=letterSpacing
-
-
-    middle.innerText = input.value
+    // result.letterSpacing=letterSpacing    middle.innerText = input.value
     result.style.display = "none"
     middle.style.display = "block"
     html2canvas(middle).then(canvas => {

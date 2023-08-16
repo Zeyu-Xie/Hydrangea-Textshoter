@@ -430,10 +430,7 @@ nav ul li a:hover {
 #work article p {
 	text-align: center;
 	padding-bottom: 65px;
-}
-
-
-.mainimg {
+}.mainimg {
 	position: relative;
 }
 
@@ -726,10 +723,7 @@ footer a:hover {
 
 .active {
 	color: #999;
-}
-
-
-/* New */
+}/* New */
 
 .os-animation {
 	opacity: 0;
@@ -770,10 +764,7 @@ if it's not present, don't show loader */
 	height: 100%;
 	z-index: 9999;
 	background: #fcdb00;
-}
-
-
-.cssload-container {
+}.cssload-container {
 	display: block;
 	margin: 49px auto;
 	width: 97px;
@@ -819,9 +810,6 @@ if it's not present, don't show loader */
 	-webkit-animation: cssload-loading-ani1 0.58s linear infinite;
 	-moz-animation: cssload-loading-ani1 0.58s linear infinite;
 }
-
-
-
 
 @keyframes cssload-loading-ani1 {
 	100% {
