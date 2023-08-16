@@ -342,7 +342,7 @@ nav ul li a:hover {
 	font-size: 22px;
 	display: block;
 	padding: 3px 12px;
-	margin: 20px auto 50px;
+	margin: 20px auto 70px;
 }
 
 #bottom p {
@@ -929,4 +929,8 @@ if it's not present, don't show loader */
 	display: none;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+input:focus {
+	outline: none;
 }
