@@ -217,6 +217,7 @@ header a.logo img {
 }
 
 .logo {
+	padding-left: 100px;
 	width: 70%;
 	float: left;
 	text-align: center;
