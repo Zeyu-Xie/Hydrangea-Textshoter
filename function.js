@@ -26,8 +26,6 @@ submit.onclick = () => {
     const letterSpacing = letterSpacingSetting.value
     const lineHeight = lineHeightSetting.value
 
-    // console.log(width, margin, border,padding, color, backgroundColor, fontSize, letterSpacing, lineHeight)
-
     middle.style.width=width
     middle.style.margin=margin
     middle.style.border=border
@@ -39,16 +37,12 @@ submit.onclick = () => {
     middle.style.letterSpacing=letterSpacing
 
     result.style.width=width
-    // result.style.margin=margin
-    // result.style.border=border
-    // result.style.padding=padding
-    // result.style.color=color
-    // result.style.backgroundColor=backgroundColor
-    // result.fontSize=fontSize
-    // result.lineHeight=lineHeight
-    // result.letterSpacing=letterSpacing    middle.innerText = input.value
+
     result.style.display = "none"
     middle.style.display = "block"
+
+    middle.innerText=input.value
+
     html2canvas(middle).then(canvas => {
         result.src = canvas.toDataURL("image/png")
     }).then(() => {
