@@ -924,10 +924,9 @@ if it's not present, don't show loader */
 }
 
 #result {
-	/* border-width: 1px;
-	border-color: black;
-	border-style: solid; */
 	margin-bottom: 70px;
 	width: 100%;
 	display: none;
+	margin-left: auto;
+	margin-right: auto;
 }
