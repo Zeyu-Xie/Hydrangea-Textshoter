@@ -43,8 +43,8 @@ submit.onclick = () => {
 
     middle.innerText=input.value
 
-    html2canvas(middle).then(canvas => {
-        result.src = canvas.toDataURL("image/png")
+    domtoimage.toJpeg(middle).then(url => {
+        result.src = url
     }).then(() => {
         middle.style.display = "none"
         result.style.display = "block"
