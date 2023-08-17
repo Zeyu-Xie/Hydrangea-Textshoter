@@ -317,25 +317,33 @@ nav ul li a:hover {
 	font-size: 34px;
 }
 
-#output {
-	padding: 110px 0;
+#overall-arrangement, #background-and-border,#text-and-font {
+	padding: 50px 0 0 0;
 }
 
-#output h3 {
+#overall-arrangement {
+	padding: 110px 0 0 0;
+}
+
+#text-and-font {
+	padding: 50px 0 110px 0;
+}
+
+#overall-arrangement h3, #background-and-border h3, #text-and-font h3 {
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #010101;
 }
 
-#output i {
+#overall-arrangement i, #background-and-border i, #text-and-font i {
 	font-size: 50px;
 	text-align: center;
 	display: block;
 	color: #010101;
 }
 
-#output input {
+#overall-arrangement input, #background-and-border input, #text-and-font input {
 	width: 100%;
 	border: 2px solid #000000;
 	color: #000000;
@@ -918,6 +926,10 @@ if it's not present, don't show loader */
 	display: none;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#middle {
+	display: none;
 }
 
 input:focus {
