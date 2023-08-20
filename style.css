@@ -295,8 +295,8 @@ nav ul li a:hover {
 	height: 206px;
 	line-height: 150%;
 	border: 2px solid #000000;
-	color: #000000;
-	background: none;
+	/* color: #000000; */
+	/* background: none; */
 	font-size: 22px;
 	display: block;
 	padding: 12px;
@@ -920,17 +920,18 @@ if it's not present, don't show loader */
 	}
 }
 
-body {
+/* body {
 	background-image: url("./images/Ukraine.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 	background-attachment: fixed;
-}
+} */
 
 #config {
-	background-image: url("./images/test-5.png");
+	background-color: #fcc920;
 	background-repeat: no-repeat;
+	background-position: left;
 	background-size: cover;
 }
 
@@ -948,4 +949,31 @@ body {
 
 input:focus {
 	outline: none;
+}
+
+#input {
+	background-color: transparent;
+	background-image: url("./images/textarea-bg.png");
+	background-size: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: transparent;
+	/* transition: all 0.3s; */
+}
+
+#input:focus {
+	color: black;
+	background-image: none;
+	/* transition: all 0.3s; */
+}
+
+#background {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("./images/Ukraine.png");
+	z-index: -1;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
