@@ -201,7 +201,7 @@ header {
 header.sticky {
 	position: fixed;
 	width: 100%;
-	background: #fcdb00;
+	background: #fcc920;
 	box-shadow: 3px 1px 0.99px 0.01px rgba(0, 0, 0, 0.05);
 	padding: 20px 0px;
 	z-index: 89;
@@ -254,7 +254,7 @@ nav ul li a:hover {
 }
 
 #config {
-	background: #fcdb00;
+	background: #fcc920;
 	padding: 210px 0 50px;
 	text-align: center;
 	position: relative;
@@ -918,6 +918,20 @@ if it's not present, don't show loader */
 	100% {
 		-moz-transform: translate(19px);
 	}
+}
+
+body {
+	background-image: url("./images/Ukraine.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+#config {
+	background-image: url("./images/test-5.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #result {
