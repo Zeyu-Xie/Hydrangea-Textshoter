@@ -15,94 +15,126 @@
         <h1 style="display: none;">Hydrangea Textshoter</h1>
         <nav>
             <a href="#">Hydrangea Textshoter</a>
+        </nav>
     </header>
 
     <section id="config">
-        <textarea id="input" style="width: 100%; min-height: 24vh; word-break: break-all;"></textarea>
+        <h2>Step 1 - Text Editing</h2>
+        <h3>Usage</h3>
+        <ol>
+            <li>
 
-        <p>Please enter your
-            content in the designated area above. Once all details are finalized, kindly click the "submit"
-            button to view your photo.</p>
-        <button id="submit">Submit</button>
+                Enter your
+                content in the designated area above.
+
+            </li>
+            <li>
+
+                Click the "submit"
+                button to view your photo.
+
+            </li>
+        </ol>
+        <h3>File Editor</h3>
+        <textarea id="input" placeholder="Input your text here."
+            style="width: 100%; min-height: 24vh; word-break: break-all; padding: 0.6rem 1rem;"></textarea>
+        <p>Click <button id="submit">Submit</button> to start your converting.</p>
     </section>
+
+    <h2>Step 2 - Format Arrangement</h2>
 
     <section id="overall-arrangement">
 
-        <div>
-            <h3>Width</h3>
-            <input id="width-setting" type="text" value="576px">
+        <h3>Overall Arrangement</h3>
+
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
+            <div style="display: flexbox;">
+                <p><b>Width</b></p>
+                <input id="width-setting" type="text" value="576px">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Height</b></p>
+                <input id="height-setting" type="text" value="auto">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Margin</b></p>
+                <input id="margin-setting" type="text" value="0">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Padding</b></p>
+                <input id="padding-setting" type="text" value="6px 12px">
+            </div>
         </div>
-        <div>
-            <h3>Height</h3>
-            <input id="height-setting" type="text" value="auto">
-        </div>
-        <div>
-            <h3>Margin</h3>
-            <input id="margin-setting" type="text" value="0">
-        </div>
-        <div>
-            <h3>Padding</h3>
-            <input id="padding-setting" type="text" value="6px 12px">
-        </div>
+        <hr>
     </section>
 
+
     <section id="background-and-border">
-        <div>
-            <h3>Background Color</h3>
-            <input id="backgroundColor-setting" type="text" value="white">
+
+        <h3>Background and Border</h3>
+
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
+            <div style="display: flexbox;">
+                <p><b>Background Color</b></p>
+                <input id="backgroundColor-setting" type="color" value="#FFFFFF">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Background Image</b></p>
+                <input id="backgroundImage-setting" type="text" value="none">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Border</b></p>
+                <input id="border-setting" type="text" value="2px solid black">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Border Radius</b></p>
+                <input id="borderRadius-setting" type="text" value="0">
+            </div>
         </div>
-        <div>
-            <h3>Background Image</h3>
-            <input id="backgroundImage-setting" type="text" value="none">
-        </div>
-        <div>
-            <h3>Border</h3>
-            <input id="border-setting" type="text" value="2px solid black">
-        </div>
-        <div>
-            <h3>Border Radius</h3>
-            <input id="borderRadius-setting" type="text" value="0">
-        </div>
+        <hr>
+
     </section>
 
     <section id="text-and-font">
-        <div>
-            <h3>Color</h3>
-            <input id="color-setting" type="text" value="black">
-        </div>
-        <div>
-            <h3>Font Size</h3>
-            <input id="fontSize-setting" type="text" value="14px">
-        </div>
-        <div>
-            <h3>Font Weight</h3>
-            <input id="fontWeight-setting" type="text" value="normal">
-        </div>
-        <div>
-            <h3>Text Align</h3>
-            <input id="textAlign-setting" type="text" value="left">
-        </div>
-        <div>
-            <h3>Letter Spacing</h3>
-            <input id="letterSpacing-setting" type="text" value="1px">
-        </div>
-        <div>
-            <h3>Line Height</h3>
-            <input id="lineHeight-setting" type="text" value="150%">
-        </div>
 
+        <h3>Text and Font</h3>
+
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
+
+            <div style="display: flexbox;">
+                <p><b>Color</b></p>
+                <input id="color-setting" type="color" value="#000000">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Font Size</b></p>
+                <input id="fontSize-setting" type="text" value="14px">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Font Weight</b></p>
+                <input id="fontWeight-setting" type="text" value="normal">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Text Align</b></p>
+                <input id="textAlign-setting" type="text" value="justify">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Letter Spacing</b></p>
+                <input id="letterSpacing-setting" type="text" value="1px">
+            </div>
+            <div style="display: flexbox;">
+                <p><b>Line Height</b></p>
+                <input id="lineHeight-setting" type="text" value="150%">
+            </div>
+        </div>
     </section>
 
-    <section id="test">
-        <div>
-            <h2>Output</h2>
-            <p>Please press the "submit" button to receive your output image displayed below.</p>
-        </div>
+    <section>
+        <h2>Step 3 - Output</h2>
+        <p>Please press the <a href="#">Submit</a> button to receive your output image displayed below.</p>
         <div>
             <div id="middle"></div>
             <img id="result" src="" alt="">
         </div>
-
     </section>
 
     <footer>
@@ -117,7 +149,7 @@
     </footer>
 
     <script src="https://zeyu-xie.github.io/Myosotis-Web/Scholar_Lite/index.js"></script>
-
+    <script src="./domToImage.js"></script>
     <script src="./function.js"></script>
 </body>
 
