@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Hydrangea Textshoter</title>
     <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <link rel="icon" href="https://zeyu-xie.github.io/Myosotis-Web/Scholar_Lite/icon.ico">
+    <link rel="icon" href="https://zeyu-xie.github.io/Myosotis-Web/Scholar_Lite/favicon.ico">
     <link rel="stylesheet" href="https://zeyu-xie.github.io/Myosotis-Web/Scholar_Lite/index.css">
 </head>
 
@@ -41,94 +41,86 @@
         <p>Click <button id="submit">Submit</button> to start your converting.</p>
     </section>
 
-    <h2>Step 2 - Format Arrangement</h2>
+    <section id="format-arrangement">
+        <h2>Step 2 - Format Arrangement</h2>
+        <section>
 
-    <section id="overall-arrangement">
+            <h3>Overall Arrangement</h3>
 
-        <h3>Overall Arrangement</h3>
-
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
-            <div style="display: flexbox;">
-                <p><b>Width</b></p>
-                <input id="width-setting" type="text" value="576px">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
+                <div style="display: flexbox;">
+                    <p><b>Width</b></p>
+                    <input id="width-setting" type="text" value="576px">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Height</b></p>
+                    <input id="height-setting" type="text" value="auto">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Margin</b></p>
+                    <input id="margin-setting" type="text" value="0">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Padding</b></p>
+                    <input id="padding-setting" type="text" value="6px 12px">
+                </div>
             </div>
-            <div style="display: flexbox;">
-                <p><b>Height</b></p>
-                <input id="height-setting" type="text" value="auto">
+            <hr>
+        </section>
+        <section>
+            <h3>Background and Border</h3>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
+                <div style="display: flexbox;">
+                    <p><b>Background Color</b></p>
+                    <input id="backgroundColor-setting" type="color" value="#FFFFFF">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Background Image</b></p>
+                    <input id="backgroundImage-setting" type="text" value="none">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Border</b></p>
+                    <input id="border-setting" type="text" value="2px solid black">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Border Radius</b></p>
+                    <input id="borderRadius-setting" type="text" value="0">
+                </div>
             </div>
-            <div style="display: flexbox;">
-                <p><b>Margin</b></p>
-                <input id="margin-setting" type="text" value="0">
+            <hr>
+        </section>
+        <section>
+            <h3>Text and Font</h3>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
+                <div style="display: flexbox;">
+                    <p><b>Color</b></p>
+                    <input id="color-setting" type="color" value="#000000">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Font Size</b></p>
+                    <input id="fontSize-setting" type="text" value="14px">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Font Weight</b></p>
+                    <input id="fontWeight-setting" type="text" value="normal">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Text Align</b></p>
+                    <input id="textAlign-setting" type="text" value="justify">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Letter Spacing</b></p>
+                    <input id="letterSpacing-setting" type="text" value="1px">
+                </div>
+                <div style="display: flexbox;">
+                    <p><b>Line Height</b></p>
+                    <input id="lineHeight-setting" type="text" value="150%">
+                </div>
             </div>
-            <div style="display: flexbox;">
-                <p><b>Padding</b></p>
-                <input id="padding-setting" type="text" value="6px 12px">
-            </div>
-        </div>
-        <hr>
+        </section>
     </section>
 
-
-    <section id="background-and-border">
-
-        <h3>Background and Border</h3>
-
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
-            <div style="display: flexbox;">
-                <p><b>Background Color</b></p>
-                <input id="backgroundColor-setting" type="color" value="#FFFFFF">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Background Image</b></p>
-                <input id="backgroundImage-setting" type="text" value="none">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Border</b></p>
-                <input id="border-setting" type="text" value="2px solid black">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Border Radius</b></p>
-                <input id="borderRadius-setting" type="text" value="0">
-            </div>
-        </div>
-        <hr>
-
-    </section>
-
-    <section id="text-and-font">
-
-        <h3>Text and Font</h3>
-
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; column-gap: 1rem;">
-
-            <div style="display: flexbox;">
-                <p><b>Color</b></p>
-                <input id="color-setting" type="color" value="#000000">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Font Size</b></p>
-                <input id="fontSize-setting" type="text" value="14px">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Font Weight</b></p>
-                <input id="fontWeight-setting" type="text" value="normal">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Text Align</b></p>
-                <input id="textAlign-setting" type="text" value="justify">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Letter Spacing</b></p>
-                <input id="letterSpacing-setting" type="text" value="1px">
-            </div>
-            <div style="display: flexbox;">
-                <p><b>Line Height</b></p>
-                <input id="lineHeight-setting" type="text" value="150%">
-            </div>
-        </div>
-    </section>
-
-    <section>
+    <section id="output">
         <h2>Step 3 - Output</h2>
         <p>Please press the <a href="#">Submit</a> button to receive your output image displayed below.</p>
         <div>
