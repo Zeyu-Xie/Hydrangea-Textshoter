@@ -1,2 +1,3 @@
 # Hydrangea-Textshoter
-Simple Tool for Converting Text to Images
+
+A website for converting texts to images.
